@@ -1,13 +1,17 @@
-<div class="hero-unit">
-	<h1>Welcome to Cat Nip!</h1>
-	<p>
-		The go-to archive of feline awesomeness.
-		For obvious reasons, dogs masquerading as 
-		cats for example, uploaded photos must be 
-		moderated before being published.
-		<%= link_to "#", "#" %>
-	</p>
-	<p>
-		<%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-large" %>
-	</p>
-</div>
+<% if user_signed_in? %>
+	<h1>You are logged in!</h1>
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome to Cat Nip!</h1>
+		<p>
+			The go-to archive of feline awesomeness.
+			We occasionally receive outrageous photos, dogs masquerading as 
+			cats for example, so uploaded photos must be 
+			moderated before being published. Thank you for understanding :)
+<!-- 			<%= link_to "#", "#" %> -->
+		</p>
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		</p>
+	</div>
+<% end %>
