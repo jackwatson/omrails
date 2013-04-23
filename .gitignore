@@ -21,3 +21,6 @@ doc/
 
 # Ignore Paperclip uploaded files
 /public/system
+
+# Amazon S3 details
+/config/s3.yml
