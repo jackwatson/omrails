@@ -4,7 +4,7 @@ gem 'rails', '3.2.13'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
-gem "paperclip", :git => 'git://github.com/lsegal/paperclip', :branch => 'remove-aws-sdk-version-check'
+gem "paperclip"
 gem 'aws-sdk'
 
 group :production do
